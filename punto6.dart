@@ -1,7 +1,7 @@
 import 'dart:io'; 
 
 
-  void main(){
+  void calcularTemperatura(){
 
 
   print("ingrese la temperatura en C°  para convertir en F°: ");
