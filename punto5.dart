@@ -1,15 +1,15 @@
 import 'dart:io';
 import 'dart:math';
 
-void main(){
+void calcularHipotenusa(){
   
   print("ingrese el cateto A: ");
-  int? catetoA = int.parse(stdin.readLineSync()!); 
+  double catetoA = double.parse(stdin.readLineSync()!); 
 
   print("ingrese el cateto B: ");
-  int? catetoB = int.parse(stdin.readLineSync()!);
+  double catetoB = double.parse(stdin.readLineSync()!);
 
-
+  var hipotenusa = 0.0;
 
   print("        +         ");
   print("       /|         ");
@@ -18,4 +18,18 @@ void main(){
   print("    /   |         ");
   print("   +____|         ");
   print("     b=$catetoB           ");
+
+  var RcatetoA = pow(catetoA, 2);
+  var RcatetoB = pow(catetoB, 2);
+
+  hipotenusa = sqrt(RcatetoA + RcatetoB);
+  print ("La hipotenusa del triángulo es: $hipotenusa"); 
+
+  
+
+
+  
+
 }
+
+
