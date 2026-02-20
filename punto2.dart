@@ -1,6 +1,6 @@
 import 'dart:io';
 
-// --- ESTA ES LA FUNCIÓN PARA SUBIR AL REPO ---
+// Función para el Punto 2: Promedio de Notas
 void calcularPromedio() {
   stdout.write("Digite la nota 1: ");
   double n1 = double.parse(stdin.readLineSync()!);
@@ -14,9 +14,4 @@ void calcularPromedio() {
   double promedio = (n1 + n2 + n3) / 3;
 
   print("El promedio del semestre es: ${promedio.toStringAsFixed(2)}");
-}
-
-// --- ESTO ES PARA QUE LO PRUEBES TÚ SOLA ---
-void main() {
-  calcularPromedio();
 }
