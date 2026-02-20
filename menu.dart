@@ -41,7 +41,7 @@ void main(){
   }else if(decision==6){
     calcularTemperatura();
   }else if(decision==7){
-    calcularFibonacci.dart();
+    calcularFibonacci();
   }else{
     print("solo se permiten opciones válidas");
   }
